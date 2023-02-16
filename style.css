@@ -40,6 +40,9 @@ body {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
+  font-style: normal;
+  text-align: center;
+  color: #131313;
 }
 .nav-link {
   margin-top: 62px;
@@ -54,6 +57,12 @@ body {
 }
 .nav-link a {
   margin-left: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #424242;
 }
 
 /* ===========HEADER STYLE(BANNER) ==========*/
@@ -212,9 +221,8 @@ body {
   line-height: 70px;
   border-radius: 8px;
   padding: 40px;
-  white-space: normal;
-  word-wrap: break-word;
 }
+
 .main-feature-right {
   width: 800px;
   height: 1060px;
@@ -275,6 +283,12 @@ body {
   width: 45.22px;
   height: 45.22px;
 }
+.hover-item {
+  transition: 0.5s;
+}
+.hover-item:hover {
+  transform: translate(0, -20px);
+}
 .fact-block-number {
   font-style: normal;
   font-weight: 600;
@@ -314,7 +328,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #727272;
-  margin: 24px 0 48px;
+  margin: 32px 0 60px;
 }
 .sponsor-logos {
   display: flex;
@@ -322,14 +336,66 @@ body {
   align-items: center;
 }
 .sponsor-logo {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* ===========  FOOTER SECTION  STYLE ==========*/
+.contact {
+  margin-top: 100px;
+}
+.contact-wrapper {
+  width: 1440px;
+  height: auto;
+  display: flex;
+  gap: 100px;
+  padding: 130px 200px;
+
+  margin: 0 auto;
+  font: inherit;
+}
+.contact .contact-wrapper .section-title {
+  text-align: left;
+}
+.contact-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.contact-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #131313;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.contact input[type='text'],
+input[type='email'],
+textarea {
+  font: inherit;
+  margin-bottom: 18px;
+  width: 100%;
+  padding: 16px 26px;
+  border-radius: 5px;
+  background: #eae6e3;
+}
+input {
+  height: 64px;
 }
 
 /* ===========  FOOTER SECTION  STYLE ==========*/
 
 .footer {
-  margin-top: 130px;
+  margin-top: 0px;
   margin-bottom: 26px;
 }
 .footer-wrapper {
